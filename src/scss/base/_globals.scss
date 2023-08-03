@@ -19,6 +19,7 @@ body {
 p {
     font-size: 2rem;
     color: v.$black;
+    line-height: 1.5;
 }
 
 .container {
@@ -45,4 +46,9 @@ h2 {
 
 h3 {
     font-size: 3rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
