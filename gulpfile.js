@@ -48,13 +48,21 @@ function convertToAvif(done) {
     done();
 }
 
+function javascript(done) {
+    src('src/js/**/*.js')
+        .pipe(dest('build/js'));
+    done();
+}
+
 function dev(done) {
     watch('src/scss/**/*.scss', css);
+    watch('src/js/**/*.js', javascript);
     done();
 }
 
 exports.css = css;
+exports.js = javascript;
 exports.images = images;
 exports.convertToWebp = convertToWebp;
 exports.convertToAvif = convertToAvif;
-exports.dev = parallel(images, convertToWebp, convertToAvif, dev);
+exports.dev = parallel(images, convertToWebp, convertToAvif, javascript, dev);
