@@ -482,3 +482,76 @@ img {
   color: #F53756;
   font-weight: 700;
 }
+
+.lineup {
+  background-color: #F53756;
+  padding: 5rem 0;
+}
+.lineup h3, .lineup p {
+  text-align: center;
+  color: #FFF;
+}
+.lineup .day {
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .stages-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.stages-container p {
+  color: #000;
+}
+
+.stage {
+  padding-top: 2rem;
+}
+.stage .stage-name:after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 2rem auto 0 auto;
+}
+
+.edm .stage-name:after {
+  background-image: url("../img/icono_edm.png");
+}
+
+.rock .stage-name:after {
+  background-image: url("../img/icono_rock.png");
+}
+
+.schedule {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.schedule li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.schedule li span {
+  font-weight: 400;
+}
+
+.bg-yellow {
+  background-color: #FEF46D;
+}
+.bg-yellow li:nth-child(odd) {
+  background-color: #fdee21;
+}
+
+.bg-teal {
+  background-color: #4CB8B3;
+}
+.bg-teal li:nth-child(odd) {
+  background-color: #3b9691;
+}
